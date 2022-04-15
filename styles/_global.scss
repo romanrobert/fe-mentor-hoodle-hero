@@ -1,0 +1,44 @@
+:root{
+    --clr-violet: hsl(257, 40%, 49%);
+    --clr-soft-magenta: hsl(300, 69%, 71%);
+    --clr-white: hsl(0,0%,100%);
+    --clr-txt: hsla(0,0%,100%, .7);
+
+    --fw-600: 600;
+}
+
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--clr-violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: var(--fw-600);
+}

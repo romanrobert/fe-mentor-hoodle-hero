@@ -1,0 +1,169 @@
+main{
+   
+    align-items: center;
+    width: 100%;
+    max-width: 23.4375rem;
+    height: 100vh;
+    max-height: 50rem;
+}
+
+.container{
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   
+}
+
+  
+.logo{
+        width: 7.5rem;
+        margin-top: 2.375rem;
+    }
+
+
+
+.hero{
+    img{
+        max-width: 100%;
+        margin-top: 4.375rem;
+    }
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.25rem;
+    h1{
+        color: var(--clr-white);
+        text-align: center;
+        max-width: 19ch
+    }
+
+    p{
+        margin-top: 1.625rem;
+        text-align: center;
+        color: var(--clr-txt);
+        max-width: 33ch;
+    }
+
+    button{
+        width: 12.5rem;
+        height: 2.5rem;
+        border-radius: 20px;
+        margin-top:1.75rem ;
+        border: none;
+        color: var(--clr-violet);
+        font-family: inherit;
+        font-size: .75rem;
+        box-shadow: 0px 8px 18px -6px #000000;
+        cursor: pointer;
+        
+    }
+button:hover{
+    background-color: var(--clr-soft-magenta);
+    color: var(--clr-white);
+}
+   
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 135px;
+    margin:3.75 auto;
+
+    .fa-facebook-f{
+        padding: .5rem 0.7rem 0.5rem 0.7rem;
+    }
+
+    i{
+        border-radius: 50%;
+        border: solid 1px var(--clr-white);
+        margin: 0rem 0.5rem;
+        padding: .5rem;
+        color: var(--clr-white);
+        &:hover{
+            border: solid 1px var(--clr-soft-magenta);
+            color: var(--clr-soft-magenta);
+        }
+    }
+}
+
+@media screen and (min-width: 50rem) {
+
+    body{
+        background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: top center;
+        width: 100%;
+        max-width: 90rem;
+        margin: auto;
+    }
+
+    main{
+        width: 100%;
+        max-width: 90rem;
+        margin: auto;
+    }
+
+    .logo{
+        width: 12.5rem;
+        
+    }
+
+  
+
+   .hero{
+       display: flex;
+       flex-direction: row;
+
+       img{
+           width: 100%;
+           max-width: 700px ;
+       }
+   }
+
+   .hero-info{
+       align-items: flex-start;
+       margin-left: 3.5rem;
+       width: 100%;
+       max-width: 510px;
+       margin-top: 0;
+     
+
+       h1{
+           text-align: start;
+           margin-top: 0;
+           font-size: 2.5rem;
+           width: 100%;
+           
+       }
+
+       p{
+           font-size: 1.125rem;
+           text-align: left;
+           max-width: 100%;
+       }
+
+       button{
+           margin-top: 28px;
+           height:3.5rem ;
+           width:12.5rem ;
+           border-radius: 28px;
+       }
+   }
+
+   .social{
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-bottom: 2.25rem;
+   }
+}
